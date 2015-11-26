@@ -25,3 +25,5 @@ target/
 build.log
 MANIFEST.MF
 settings.xml
+settings.gradle
+gradlew
