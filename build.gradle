@@ -47,10 +47,10 @@ dependencies {
       exclude module: 'org.springframework.boot:spring-boot-starter-logging'
       exclude module: 'logback-classic'
     }
-  //  compile ('org.springframework.boot:spring-boot-starter-thymeleaf') {
-  //    exclude module: 'org.springframework.boot:spring-boot-starter-logging'
-  //    exclude module: 'logback-classic'
-  //  }
+    compile ('org.springframework.boot:spring-boot-starter-thymeleaf') {
+      exclude module: 'org.springframework.boot:spring-boot-starter-logging'
+      exclude module: 'logback-classic'
+    }
   	compile ('org.springframework.boot:spring-boot-starter-data-jpa') {
       exclude module: 'org.springframework.boot:spring-boot-starter-logging'
       exclude module: 'logback-classic'
@@ -73,7 +73,7 @@ dependencies {
   
   testCompile("junit:junit") 
 } 
- 
+
 task wrapper(type: Wrapper) {
     gradleVersion = '2.9'
 }
